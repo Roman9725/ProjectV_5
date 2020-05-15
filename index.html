@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>V Layouts</title>
+
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+			}
+
+			.clearFix {
+				clear: both;
+			}
+
+			.mainWrap {
+				width: 100%;
+			}
+
+			.subWrap {
+				width: 960px;
+				display: block;
+				margin: 0 auto;
+			}
+
+			.headerSec {
+				background-color: grey;
+				height: 100px;
+				text-align: center;
+			}
+
+			.navSec {
+				background-color: aquamarine;
+				height: 70px;
+				margin-top: 15px;
+				margin-bottom: 15px;
+			}
+
+			.navSec ul {
+				width: 600px;
+				margin: auto;
+			}
+
+			.navSec ul li {
+				float: left;
+				list-style: none;
+				width: 200px;
+				text-align: center;
+				margin-top: 25px;
+			}
+
+			.navSec ul li a {
+				text-decoration: none;
+				background-color: grey;
+				padding: 25px;
+			}
+
+			.LHS {
+				float: left;
+				width: 80%;
+			}
+
+			.sectionPart {
+				background-color: cornflowerblue;
+				height: 250px;
+				text-align: center;
+			}
+
+			.articlePart {
+				background-color: rgb(10, 27, 59);
+				height: 250px;
+				color: wheat;
+				text-align: center;
+			}
+
+			.RHS {
+				float: right;
+				width: 20%;
+				background-color: teal;
+				height: 500px;
+				text-align: center;
+			}
+
+			.summary {
+				background-color: tomato;
+				height: 150px;
+				margin-top: 15px;
+				text-align: center;
+			}
+
+			.footerSec {
+				background-color: crimson;
+				height: 100px;
+				margin-top: 20px;
+				text-align: center;
+			}
+		</style>
+	</head>
+	<body>
+		<!--Start of top section-->
+
+		<div class="mainWrap">
+			<div class="subWrap">
+				<!--Start of header-->
+				<div class="headerSec">
+					<header>
+						<h1>HEADER SECTION</h1>
+					</header>
+				</div>
+				<!--Start of nav-->
+				<div class="navSec">
+					<ul>
+						<li><a href="#">NAV LINK 1</a></li>
+						<li><a href="#">NAV LINK 3</a></li>
+						<li><a href="#">NAV LINK 3</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!--end of top section-->
+
+		<!--start of middle section-->
+
+		<div class="mainWrap">
+			<div class="subWrap">
+				<div class="LHS">
+					<div class="sectionPart">
+						<h1>SECTION PART</h1>
+						<p>some text</p>
+					</div>
+					<div class="articlePart">
+						<h1>ARTICLE PART</h1>
+						<p>some detailed text</p>
+					</div>
+				</div>
+
+				<!--end of LHS-->
+
+				<!--start of RHS-->
+
+				<div class="RHS">
+					<h1>SIDEBAR PART</h1>
+					<p>
+						Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi
+						obcaecati, quibusdam placeat voluptatibus nisi doloremque.
+					</p>
+				</div>
+
+				<!--end of RHS-->
+			</div>
+		</div>
+		<!--end of middle section-->
+		<div class="clearFix"></div>
+		<!--start of summary section-->
+		<div class="mainWrap">
+			<div class="subWrap">
+				<div class="summary">
+					<h3>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi,
+						asperiores.
+					</h3>
+				</div>
+			</div>
+		</div>
+
+		<!--end of summary section-->
+
+		<!--start of footer section-->
+
+		<div class="mainWrap">
+			<div class="subWrap">
+				<div class="footerSec">
+					<footer>
+						<h2>FOOTER SECTION</h2>
+					</footer>
+				</div>
+			</div>
+		</div>
+		<!--end of footer section-->
+	</body>
+</html>
